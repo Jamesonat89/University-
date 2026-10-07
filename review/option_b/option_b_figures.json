@@ -1,0 +1,264 @@
+{
+ "scale": 0.4581742946854828,
+ "base_rows": [
+  {
+   "vol": 17.181536050705606,
+   "q": 4630.423965665161,
+   "price": 119.0,
+   "rev": 551020.4519141541,
+   "var": 311442.3159306387,
+   "fixed": 214340.0,
+   "fleet": 125600.0,
+   "ebitda": -100361.86401648459,
+   "margin": -0.18213818319781785,
+   "tax": 0.0,
+   "dwc": 48308.896081458195,
+   "maint": 5510.204519141541,
+   "fcf": -154180.96461708433,
+   "cum": -432700.96461708436,
+   "contrib": 51.74000000000001
+  },
+  {
+   "vol": 28.635893417842677,
+   "q": 7717.373276108601,
+   "price": 121.975,
+   "rev": 941326.6053533466,
+   "var": 532047.289714841,
+   "fixed": 220770.2,
+   "fleet": 129368.0,
+   "ebitda": 59141.11563850549,
+   "margin": 0.06282741325079795,
+   "tax": 7822.278909626373,
+   "dwc": 34218.8013910329,
+   "maint": 9413.266053533465,
+   "fcf": 7686.769284312752,
+   "cum": -425014.19533277163,
+   "contrib": 53.033500000000004
+  },
+  {
+   "vol": 32.0722006279838,
+   "q": 8643.458069241633,
+   "price": 125.02437499999999,
+   "rev": 1080642.942945642,
+   "var": 610790.2885926374,
+   "fixed": 227393.30599999998,
+   "fleet": 133249.04,
+   "ebitda": 109210.30835300454,
+   "margin": 0.10106049279821928,
+   "tax": 20339.577088251135,
+   "dwc": 12214.099225928716,
+   "maint": 10806.429429456419,
+   "fcf": 65850.20260936828,
+   "cum": -359163.9927234034,
+   "contrib": 54.35933750000001
+  },
+  {
+   "vol": 33.90489780672573,
+   "q": 9137.369958912584,
+   "price": 128.14998437499995,
+   "rev": 1170953.8174632415,
+   "var": 661834.9055678792,
+   "fixed": 234215.10518,
+   "fleet": 137246.5112,
+   "ebitda": 137657.2955153623,
+   "margin": 0.11755996988299977,
+   "tax": 27451.323878840572,
+   "dwc": 7917.707295510714,
+   "maint": 11709.538174632415,
+   "fcf": 90578.72616637859,
+   "cum": -268585.2665570248,
+   "contrib": 55.71832093749998
+  },
+  {
+   "vol": 35.279420690782175,
+   "q": 9507.803876165795,
+   "price": 131.35373398437494,
+   "rev": 1248885.5411254908,
+   "var": 705882.7016479034,
+   "fixed": 241241.55833540004,
+   "fleet": 141363.90653600002,
+   "ebitda": 160397.37460618728,
+   "margin": 0.12843240579247783,
+   "tax": 33136.34365154682,
+   "dwc": 6832.4061779744225,
+   "maint": 12488.855411254908,
+   "fcf": 107939.76936541114,
+   "cum": -160645.49719161366,
+   "contrib": 57.11127896093748
+  }
+ ],
+ "base_cap": 278520.0,
+ "base_payback": "Not within five years (about 78 if 2031 cash continues)",
+ "npv": {
+  "0": -160645.49719161357,
+  "0.08": -222375.91172169356,
+  "0.1": -233968.98639107475,
+  "0.12": -244370.51467188698
+ },
+ "disc_payback": {
+  "0.08": "Not within five years (about 103 if 2031 cash continues)",
+  "0.1": "Not within five years (about 114 if 2031 cash continues)",
+  "0.12": "Not within five years (about 129 if 2031 cash continues)"
+ },
+ "share_2028": 432700.96461708436,
+ "go": "NO-GO",
+ "tax_relief_2027": 32053.466004121146,
+ "scenarios": {
+  "Downside": {
+   "capital": 306372.0,
+   "ebitda1": -184333.44502783084,
+   "fcf1": -222309.33278056365,
+   "cum12": -528681.3327805636,
+   "payback": "Not within five years",
+   "cum5": -814508.6825635347,
+   "rule": "NO-GO"
+  },
+  "Base": {
+   "capital": 278520.0,
+   "ebitda1": -100361.86401648459,
+   "fcf1": -154180.96461708433,
+   "cum12": -432700.96461708436,
+   "payback": "Not within five years (about 78 if 2031 cash continues)",
+   "cum5": -160645.49719161366,
+   "rule": "NO-GO"
+  },
+  "Upside": {
+   "capital": 264594.0,
+   "ebitda1": -31747.13039150648,
+   "fcf1": -98563.71587400338,
+   "cum12": -363157.71587400336,
+   "payback": "43.2",
+   "cum5": 297488.0692273746,
+   "rule": "NO-GO"
+  }
+ },
+ "breakeven": [
+  {
+   "case": "2027, two wagons",
+   "fixed": 339940.0,
+   "contrib": 51.74,
+   "day": 24.379066733697027,
+   "month": 547.5132070609458,
+   "planned": 17.181536050705606,
+   "mos": -0.418910780837656
+  },
+  {
+   "case": "2028, two wagons",
+   "fixed": 350138.2,
+   "contrib": 53.0335,
+   "day": 24.497989010446773,
+   "month": 550.1840031929504,
+   "planned": 28.635893417842677,
+   "mos": 0.1445006218949546
+  },
+  {
+   "case": "2027, full downside",
+   "fixed": 339940.0,
+   "contrib": 44.807,
+   "day": 28.151246742729576,
+   "month": 632.2300830971351,
+   "planned": 12.886152038029206,
+   "mos": -1.184612338861943
+  }
+ ],
+ "planned_month_2027": 385.86866380543006,
+ "sensitivities": [
+  {
+   "variable": "Base case",
+   "change": "Same market share as Option A",
+   "payback": "Not within five years (about 78 if 2031 cash continues)",
+   "cum5": -160645.49719161366,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Volume",
+   "change": "Equal to Option A's (2.18 times A's share)",
+   "payback": "21.5",
+   "cum5": 1608260.999541257,
+   "rule": "GO"
+  },
+  {
+   "variable": "Volume",
+   "change": "Enough for 2027 EBITDA of zero (1.42 times A's share; 65% of A's volume)",
+   "payback": "37.6",
+   "cum5": 479700.778095814,
+   "rule": "GO"
+  },
+  {
+   "variable": "Volume",
+   "change": "Enough for payback within four years (1.24 times A's share; 57% of A's volume)",
+   "payback": "48.0",
+   "cum5": 199283.24046154553,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Volume",
+   "change": "Enough to match Option A's payback (2.06 times A's share; 95% of A's volume)",
+   "payback": "23.1",
+   "cum5": 1433655.088929667,
+   "rule": "GO"
+  },
+  {
+   "variable": "Volume",
+   "change": "25% above base, all years",
+   "payback": "46.9",
+   "cum5": 221504.05862012043,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "First-year volume",
+   "change": "\u221225%",
+   "payback": "Not within five years (about 84 if 2031 cash continues)",
+   "cum5": -219162.48005770694,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Fleet",
+   "change": "One wagon in 2027 (finance \u2212\u00a362,800 that year)",
+   "payback": "Not within five years (about 71 if 2031 cash continues)",
+   "cum5": -97845.49719161354,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Rent",
+   "change": "\u00a330,000 a year (rates \u00a315,000)",
+   "payback": "Not within five years (about 70 if 2031 cash continues)",
+   "cum5": -97167.71932911365,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Rent",
+   "change": "\u00a350,000 a year (rates \u00a325,000)",
+   "payback": "Not within five years (about 88 if 2031 cash continues)",
+   "cum5": -224123.2750541136,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Price",
+   "change": "\u221210%",
+   "payback": "Not within five years",
+   "cum5": -552703.0663079659,
+   "rule": "NO-GO"
+  },
+  {
+   "variable": "Materials",
+   "change": "+10%",
+   "payback": "Not within five years (about 132 if 2031 cash continues)",
+   "cum5": -360747.47723587166,
+   "rule": "NO-GO"
+  }
+ ],
+ "multipliers": {
+  "ebitda0": 1.4189107808376558,
+  "payback48": 1.235463270975564,
+  "matchA": 2.0636911526475448
+ },
+ "A": {
+  "payback": 23.123545126494214,
+  "npv": {
+   "0.08": 1053411.446329499,
+   "0.1": 967840.3774761537,
+   "0.12": 889618.0237631383
+  }
+ }
+}
