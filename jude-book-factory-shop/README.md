@@ -41,8 +41,8 @@ remembered between visits.
    Until then a simple book-and-star wordmark is shown.
 3. **Products.** Replace the sample products (see below). Then set `shop.demoMode: false` to remove the
    "Preview shop" strip and the "Sample" badges.
-4. **Words.** Read `our-story.html` and `help.html`. The story text was drafted from public press coverage,
-   so the family should check it and make it their own. Trustees should approve the delivery and returns terms.
+4. **Words.** Read `our-story.html` and `help.html`. The story text was drafted from the main charity website
+   and press coverage, so the family should check it and make it their own. Trustees should approve the delivery and returns terms.
 5. **Numbers.** Update `impact` (books donated, workshop places), the delivery prices, and the
    `averageMarginPercent` / `costPerBook` values behind the "funds N books" estimate (or set
    `showImpactEstimate: false`).
@@ -120,6 +120,13 @@ not been tested against a live store yet, so try it on a free Shopify developmen
 Alternatively you can move the whole shop onto a Shopify theme and keep this design as a reference. Either
 way works.
 
+### Your existing website's shop
+
+judeandthebookfactory.co.uk already appears to have an "All Products" shop section. If that's run through your
+website builder's own store (Wix Stores, for example), you have two simple choices:
+- run this site as the dedicated Faire shop and link to it from the main menu (e.g. `shop.judeandthebookfactory.co.uk`), or
+- keep everything in that store and use this design and catalogue as the plan for setting it up.
+
 ### Option B: Square, SumUp, Stripe, WooCommerce, etc.
 
 Copy `providers/shopify.js` as a starting point and implement the same four functions:
@@ -140,7 +147,16 @@ Add a `<script>` tag for the new file to each page, then set the provider names 
   trading subsidiary. Check the current limits with your accountant or independent examiner.
 - **Gift Aid:** shop purchases are sales, not donations, so Gift Aid can't be claimed on them. The site
   says this in the footer and help page.
-- **Faire terms:** check Faire's retailer terms for any rules on reselling online and on advertised prices.
+- **Faire's retailer terms:** at the time of writing, Faire's terms and help centre say:
+  - **Allowed:** selling on your own website (this one), in your own shop, and on approved social channels
+    (Facebook, Instagram, CommentSold).
+  - **Not allowed without Faire's approval:** Amazon, eBay, Etsy, Poshmark, TikTok, WhatNot, private Facebook
+    groups and other marketplaces. Breaching this can get your Faire account closed.
+  - **No rebranding or repackaging:** keep each brand's name visible. The catalogue manager has a Brand field for this.
+  - **Product photos and descriptions:** you may reuse the brand's content, but only to resell that same product.
+  - **Online-only retailers:** some brands refuse to sell to retailers without a physical shop, so mention your
+    shop or book swap space when you apply.
+  - Re-check the current terms at faire.com before launch, because they're updated regularly.
 - **Online selling rules:** the help page includes the standard 14-day cancellation right for distance sales.
   Make sure your returns process matches it.
 - **Data protection:** you'll hold customer names and addresses, so keep orders in a secure inbox and only

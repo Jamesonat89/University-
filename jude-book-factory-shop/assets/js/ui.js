@@ -213,7 +213,7 @@ window.JBF = window.JBF || {};
     el.className = "site-footer";
     el.innerHTML =
       '<div class="container"><div class="footer-grid">' +
-      '<div><h2>' + esc(c.name) + '</h2><p>Every purchase helps put brand new books into the hands of children in hospitals, hospices and those affected by grief and childhood cancer.</p></div>' +
+      '<div><h2>' + esc(c.name) + '</h2><p>Jude\'s idea was simple: get books to children. Every purchase helps put brand new books into the hands of children in hospitals, hospices and those affected by grief and childhood cancer.</p></div>' +
       '<div><h2>Shop</h2><ul>' +
       '<li><a href="' + r + 'shop.html">All products</a></li>' +
       '<li><a href="' + r + 'basket.html">Your basket</a></li>' +
@@ -222,6 +222,8 @@ window.JBF = window.JBF || {};
       '<div><h2>The charity</h2><ul>' +
       '<li><a href="' + r + 'our-story.html">Jude\'s story</a></li>' +
       '<li><a href="' + esc(c.mainWebsite) + '" rel="noopener">Main charity website</a></li>' +
+      '<li><a href="' + esc(c.mainWebsite) + 'jude-s-book-hides" rel="noopener">Book hides &amp; frends</a></li>' +
+      '<li><a href="' + esc(c.mainWebsite) + 's-projects-side-by-side" rel="noopener">Book swap spaces</a></li>' +
       '<li><a href="' + esc(c.donateUrl) + '" rel="noopener">Make a donation</a></li>' +
       "</ul></div>" +
       '<div><h2>Get in touch</h2><ul>' +

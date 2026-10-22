@@ -30,6 +30,7 @@ JBF.config = {
   impact: {
     booksDonated: "9,000+",
     workshopPlaces: "120+",
+    frends: "1,000+",
     booksAsOf: "2026"
   },
 

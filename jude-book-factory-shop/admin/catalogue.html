@@ -21,6 +21,9 @@
       <p>Add your Faire stock here, then press <strong>Download products.js</strong> and replace the file at
         <code>assets/js/products.js</code>. Your edits are kept in this browser as a draft until you download them.
         Nothing here is sent anywhere.</p>
+      <p class="small">Faire lets you reuse a brand's own photos and descriptions to resell that same product. Keep the
+        brand's name and packaging as they are, and only sell Faire stock on your own channels (this website, your shop,
+        Facebook or Instagram), not on Amazon, eBay, Etsy or TikTok Shop.</p>
     </div>
 
     <div class="container" style="padding-bottom:56px">
@@ -45,7 +48,7 @@
         <h2 id="editor-title">Edit product</h2>
         <div class="form-grid cols-2">
           <div class="field"><label for="f-title">Product name</label><input id="f-title" name="title" type="text" required></div>
-          <div class="field"><label for="f-brand">Brand / maker</label><input id="f-brand" name="brand" type="text"></div>
+          <div class="field"><label for="f-brand">Brand / maker</label><input id="f-brand" name="brand" type="text"><span class="hint">keep the brand's own name, as Faire doesn't allow rebranding</span></div>
           <div class="field"><label for="f-category">Category</label><select id="f-category" name="category"></select></div>
           <div class="field"><label for="f-id">Web address name</label><input id="f-id" name="id" type="text" pattern="[a-z0-9\-]+" placeholder="made from the name if left blank"><span class="hint">lowercase letters, numbers and dashes</span></div>
           <div class="field"><label for="f-price">Our price (£)</label><input id="f-price" name="price" type="number" step="0.01" min="0" required></div>
