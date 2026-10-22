@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Catalogue Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="admin" data-root="../">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <div class="container page-head">
+      <h1>Catalogue manager</h1>
+      <p>Add your Faire stock here, then press <strong>Download products.js</strong> and replace the file at
+        <code>assets/js/products.js</code>. Your edits are kept in this browser as a draft until you download them.
+        Nothing here is sent anywhere.</p>
+    </div>
+
+    <div class="container" style="padding-bottom:56px">
+      <div class="toolbar">
+        <button class="btn btn-primary" type="button" id="add">+ Add product</button>
+        <button class="btn btn-gold" type="button" id="download">Download products.js</button>
+        <label class="btn btn-ghost" for="csv">Import CSV<input id="csv" type="file" accept=".csv,text/csv" hidden></label>
+        <button class="btn btn-ghost" type="button" id="template">CSV template</button>
+        <button class="btn btn-ghost" type="button" id="remove-samples">Remove sample products</button>
+        <button class="link-btn" type="button" id="reset">Discard draft</button>
+      </div>
+      <p class="notice" id="status" role="status" hidden></p>
+
+      <div class="panel table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>Product</th><th>Category</th><th>Price</th><th>RRP</th><th>Stock</th><th>Featured</th><th><span class="visually-hidden">Actions</span></th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+
+      <form class="panel" id="editor" hidden style="margin-top:24px">
+        <h2 id="editor-title">Edit product</h2>
+        <div class="form-grid cols-2">
+          <div class="field"><label for="f-title">Product name</label><input id="f-title" name="title" type="text" required></div>
+          <div class="field"><label for="f-brand">Brand / maker</label><input id="f-brand" name="brand" type="text"></div>
+          <div class="field"><label for="f-category">Category</label><select id="f-category" name="category"></select></div>
+          <div class="field"><label for="f-id">Web address name</label><input id="f-id" name="id" type="text" pattern="[a-z0-9\-]+" placeholder="made from the name if left blank"><span class="hint">lowercase letters, numbers and dashes</span></div>
+          <div class="field"><label for="f-price">Our price (£)</label><input id="f-price" name="price" type="number" step="0.01" min="0" required></div>
+          <div class="field"><label for="f-rrp">Usual retail price (£)</label><input id="f-rrp" name="rrp" type="number" step="0.01" min="0"><span class="hint">shows as a "was" price</span></div>
+          <div class="field"><label for="f-stock">Stock</label><input id="f-stock" name="stock" type="number" step="1" min="0" required></div>
+          <div class="field"><label for="f-age">Age range</label><input id="f-age" name="ageRange" type="text" placeholder="e.g. 3+"></div>
+          <div class="field"><label for="f-image">Photo</label><input id="f-image" name="image" type="text" placeholder="assets/img/products/my-photo.jpg or https://…">
+            <span class="hint">Put photos in <code>assets/img/products/</code>, or choose one to fill in its name:
+              <input type="file" id="f-image-pick" accept="image/*"></span></div>
+          <div class="field"><label for="f-faire">Faire reference / SKU</label><input id="f-faire" name="faireRef" type="text"><span class="hint">for your records only</span></div>
+          <div class="field" style="grid-column:1/-1"><label for="f-desc">Description</label><textarea id="f-desc" name="description"></textarea></div>
+          <div class="field"><label for="f-tags">Search words</label><input id="f-tags" name="tags" type="text" placeholder="comma, separated, words"></div>
+          <label class="check" style="align-self:end"><input type="checkbox" id="f-featured" name="featured"> Feature on the home page</label>
+        </div>
+        <div class="toolbar" style="margin-top:20px">
+          <button class="btn btn-primary" type="submit">Save product</button>
+          <button class="btn btn-ghost" type="button" id="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/products.js"></script>
+  <script src="../assets/js/commerce/core.js"></script>
+  <script src="../assets/js/commerce/providers/local-catalogue.js"></script>
+  <script src="../assets/js/commerce/providers/enquiry-checkout.js"></script>
+  <script src="../assets/js/commerce/providers/shopify.js"></script>
+  <script src="../assets/js/ui.js"></script>
+  <script src="../assets/js/pages/admin.js"></script>
+</body>
+</html>

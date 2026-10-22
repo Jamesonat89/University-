@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Factory Shop</title>
+  <meta name="description" content="Shop beautiful gifts, books and toys from independent makers. Every purchase helps Jude and the Book Factory put brand new books into the hands of children in hospitals and hospices.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">The Book Factory Shop</span>
+          <h1>Shop with <em>pure imagination</em>.</h1>
+          <p class="lead">Lovely gifts, books and toys from independent makers, at less than their usual price.
+            Every penny of profit helps put brand new books into the hands of children in hospitals, in hospices,
+            and living with grief and childhood cancer.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="shop.html">Start shopping</a>
+            <a class="btn btn-ghost" href="our-story.html">Read Jude's story</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f7cd56"/><stop offset="1" stop-color="#e19c1c"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="190" r="160" fill="#2f6fd6" opacity=".12"/>
+            <!-- book stack -->
+            <rect x="92" y="262" width="220" height="38" rx="8" fill="#4b2a7b"/>
+            <rect x="104" y="270" width="196" height="6" rx="3" fill="#efe7fa" opacity=".5"/>
+            <rect x="110" y="222" width="190" height="40" rx="8" fill="#2f6fd6"/>
+            <rect x="122" y="231" width="166" height="6" rx="3" fill="#fff" opacity=".45"/>
+            <rect x="98" y="184" width="200" height="38" rx="8" fill="#e2583e"/>
+            <rect x="110" y="192" width="176" height="6" rx="3" fill="#fff" opacity=".45"/>
+            <!-- open book -->
+            <path d="M200 176c-30-22-72-24-104-10v-70c32-14 74-12 104 10z" fill="#fdf8ee" stroke="#241b3a" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M200 176c30-22 72-24 104-10v-70c-32-14-74-12-104 10z" fill="#fdf8ee" stroke="#241b3a" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M120 112c20-6 44-4 62 6M120 132c20-6 44-4 62 6M218 118c18-10 42-12 62-6M218 138c18-10 42-12 62-6" stroke="#2f6fd6" stroke-width="5" stroke-linecap="round" fill="none" opacity=".6"/>
+            <!-- golden ticket -->
+            <g transform="rotate(-12 300 70)">
+              <path d="M240 46h120v18a10 10 0 0 0 0 20v18H240V84a10 10 0 0 0 0-20z" fill="url(#hg)" stroke="#241b3a" stroke-width="4"/>
+              <text x="296" y="79" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="12" fill="#241b3a">GOLDEN TICKET</text>
+            </g>
+            <!-- stars -->
+            <g fill="#f2b632">
+              <path d="M70 70l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z"/>
+              <path d="M340 190l4 9 10 1-8 6 3 10-9-6-9 6 3-10-8-6 10-1z"/>
+              <path d="M54 220l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+              <path d="M200 30l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="how-heading">How your shopping helps</h2>
+            <p>A simple idea, just like Jude's: get good things to the people who need them.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>We find treasures</h3>
+            <p>We buy beautiful stock from independent brands through the Faire wholesale marketplace, often at reduced value.</p>
+          </div>
+          <div class="step">
+            <h3>You save</h3>
+            <p>You get thoughtful gifts, books and toys for less than the usual retail price.</p>
+          </div>
+          <div class="step">
+            <h3>Children get books</h3>
+            <p>The profits fund brand new books, goody bags and creative workshops for children who need a little magic.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="featured-heading">Fresh from the factory</h2>
+            <p>A few of our favourite finds right now.</p>
+          </div>
+          <a class="btn btn-ghost" href="shop.html">See everything</a>
+        </div>
+        <div class="grid" id="featured-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="cats-heading">
+      <div class="container">
+        <h2 id="cats-heading">Browse by category</h2>
+        <div class="cat-tiles" id="cat-tiles"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="story-heading">
+      <div class="container story">
+        <div>
+          <span class="eyebrow">Our story</span>
+          <h2 id="story-heading">It all started with one little boy and a big idea</h2>
+          <p>Jude started the Book Factory when he was just four years old, with one simple goal: to get books to children.
+            He began by hiding his own books for other children to find.</p>
+          <p>Jude was diagnosed with high-risk neuroblastoma, and died in 2023 aged five. His family turned his project into a
+            registered charity so that his kindness keeps reaching children, one book at a time.</p>
+          <a class="btn btn-primary" href="our-story.html">Read Jude's story</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong data-impact="booksDonated">9,000+</strong><span>brand new books donated</span></div>
+          <div class="stat"><strong data-impact="workshopPlaces">120+</strong><span>creative workshop places funded</span></div>
+          <div class="stat"><strong class="stat-word">Goody bags</strong><span>for children affected by childhood cancer</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ticket-heading">
+      <div class="container">
+        <div class="ticket">
+          <div>
+            <h2 id="ticket-heading">Prefer to give directly?</h2>
+            <p>A donation goes straight to books, goody bags and workshops, and can be Gift Aided too.</p>
+          </div>
+          <a class="btn btn-ghost" data-donate href="#">Donate now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/commerce/core.js"></script>
+  <script src="assets/js/commerce/providers/local-catalogue.js"></script>
+  <script src="assets/js/commerce/providers/enquiry-checkout.js"></script>
+  <script src="assets/js/commerce/providers/shopify.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/pages/home.js"></script>
+</body>
+</html>

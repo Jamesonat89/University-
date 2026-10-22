@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Book Factory Shop</title>
+  <meta name="description" content="Browse gifts, books, toys and more. Every purchase supports Jude and the Book Factory.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="shop">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <div class="container page-head">
+      <h1 id="shop-title">Shop everything</h1>
+      <p>Treasures from independent makers, sourced through Faire, all at less than their usual price. Profits fund books for children.</p>
+    </div>
+    <div class="container shop-layout">
+      <aside class="filters" aria-label="Filters">
+        <form id="filter-form" role="search">
+          <div class="field">
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Candle, wooden, bedtime…" autocomplete="off">
+          </div>
+        </form>
+        <div>
+          <h2>Category</h2>
+          <div class="chips" id="cat-chips"></div>
+        </div>
+        <label class="check"><input type="checkbox" id="in-stock"> In stock only</label>
+        <button type="button" class="link-btn" id="clear-filters" style="justify-self:start;color:var(--blue-ink)">Clear filters</button>
+      </aside>
+      <section aria-labelledby="shop-title">
+        <div class="results-bar">
+          <span id="result-count" class="small" aria-live="polite"></span>
+          <label class="small">Sort by
+            <select id="sort">
+              <option value="featured">Recommended</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="saving">Biggest saving</option>
+              <option value="az">Name A–Z</option>
+            </select>
+          </label>
+        </div>
+        <div class="grid" id="product-grid"></div>
+        <div class="empty" id="empty" hidden>
+          <h2>Nothing found</h2>
+          <p>Try a different search or category.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/commerce/core.js"></script>
+  <script src="assets/js/commerce/providers/local-catalogue.js"></script>
+  <script src="assets/js/commerce/providers/enquiry-checkout.js"></script>
+  <script src="assets/js/commerce/providers/shopify.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/pages/shop.js"></script>
+</body>
+</html>

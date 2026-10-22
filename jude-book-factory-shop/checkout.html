@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Book Factory Shop</title>
+  <meta name="description" content="Checkout at the Book Factory Shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="basket">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <div id="checkout-root">
+      <div class="container page-head"><h1>Checkout</h1></div>
+      <div class="container two-col">
+        <form id="checkout-form" class="panel" novalidate>
+          <p class="notice" id="setup-warning" hidden><strong>Shop owner:</strong> set your orders email address in
+            <code>assets/js/config.js</code> (charity.email) before going live.</p>
+
+          <fieldset>
+            <legend>Your details</legend>
+            <div class="form-grid cols-2">
+              <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="phone">Phone <span class="small">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Delivery or collection</legend>
+            <div class="form-grid" id="delivery-options"></div>
+            <div class="form-grid cols-2" id="address" style="margin-top:16px" hidden>
+              <div class="field"><label for="line1">Address line 1</label><input id="line1" name="line1" type="text" autocomplete="address-line1" data-required></div>
+              <div class="field"><label for="line2">Address line 2 <span class="small">(optional)</span></label><input id="line2" name="line2" type="text" autocomplete="address-line2"></div>
+              <div class="field"><label for="town">Town / city</label><input id="town" name="town" type="text" autocomplete="address-level2" data-required></div>
+              <div class="field"><label for="postcode">Postcode</label><input id="postcode" name="postcode" type="text" autocomplete="postal-code" data-required></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anything else?</legend>
+            <div class="form-grid">
+              <div class="field"><label for="notes">Gift message or notes <span class="small">(optional)</span></label><textarea id="notes" name="notes"></textarea></div>
+              <label class="check"><input type="checkbox" name="marketing" id="marketing"> Keep me updated about new stock and the charity's work (you can unsubscribe at any time).</label>
+            </div>
+          </fieldset>
+
+          <p class="impact-note" id="pay-note"></p>
+          <p class="error-text" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-primary btn-block" id="place-order" type="submit">Place order</button>
+          <p class="small" style="margin-top:10px">By placing an order you agree to our <a href="help.html">delivery &amp; returns terms</a>.
+            We only use your details to process your order.</p>
+        </form>
+        <aside class="panel summary" id="summary" aria-live="polite"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/commerce/core.js"></script>
+  <script src="assets/js/commerce/providers/local-catalogue.js"></script>
+  <script src="assets/js/commerce/providers/enquiry-checkout.js"></script>
+  <script src="assets/js/commerce/providers/shopify.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/pages/checkout.js"></script>
+</body>
+</html>
